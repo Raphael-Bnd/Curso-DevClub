@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="1contatoraphael@gmail.com" method="post">
+    <fieldset class="Dados-gerais">
+        <legend>Dados Gerais</legend>
+        <label for="nome">Nome:</label>
+        <input required autofocus placeholder="Nome" type="text" minlength="3" id="nome"/> *
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input required type="date" id="data_nascimento"/>
+        <label for="cpf">CPF:</label>
+        <input required placeholder="***.***.***-**" type="cpf" maxlength="11" id="cpf"/> *
+</fieldset>
+    <fieldset class="endereco">
+        <legend>Endereço</legend>
+        <label for="tipo_endereço">Tipo:</label>
+        <select id="tipo_endereço">
+            <option value="">Selecione</option>
+            <option value="">Rua</option>
+            <option value="">Estrada</option>
+            <option value="">Rodovia</option>
+            <option value="">Outros</option>
+        </select>
+        <label for="lagradouro_endereco">Lagradouro:</label>
+        <input type="text" id="lagradouro_endereco"/>
+        <label for="numero_endereco">Número:</label>
+        <input type="number" id="numero_endereco"/>
+        <label for="complemento_endereco">Complemento:</label>
+        <input type="text" id="complemento_endereco"/>
+</fieldset>
+    <fieldset class="fale-conosco">
+        <legend>Fale Conosco</legend>
+        <label for="msg">Mensagem</label>
+        <textarea placeholder="Digite sua mensagem!" type="text" id="msg"></textarea>
+</fieldset>
+    <fieldset class="botoes">
+        <button type="submit">Enviar sua mensagem</button>
+        <button type="reset">Limpar o Formulário</button>
+</fieldset>
+</form>
+</body>
+</html>

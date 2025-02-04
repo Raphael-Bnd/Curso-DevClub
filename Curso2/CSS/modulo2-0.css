@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: Poppins;
+    background-color: rgb(238, 245, 253);
+    margin:0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#container{
+    text-align: justify;
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    padding: 15px;
+}
+
+h1::first-line{
+    color: blue;
+    text-transform: uppercase;
+}
+
+ul li{
+    position:relative;
+    display:inline;/*flex, grid*/
+    /* flex-direction: column; flex-direction: row;*/
+    background-color: transparent;
+    list-style: none;
+    right: 50px;
+}
+
+.button-color{
+    position: relative;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 0px 15px;
+    border: 3px solid blue;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-color: blue;
+    background-color: transparent;
+    background-color: blue;
+    padding: 8px 15ch;
+    color: whitesmoke;
+    transition: ease-in;
+    cursor:all;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    top: 55px;
+}
+
+.button-color:hover{
+    background-color: rgb(203, 203, 237);
+    border-color: rgb(6, 6, 158);
+    padding: 8px 10%;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(51, 0, 255);
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
